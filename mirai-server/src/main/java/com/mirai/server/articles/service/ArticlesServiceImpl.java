@@ -11,7 +11,7 @@ import com.mirai.server.articles.repository.ArticlesRepository;
 
 @Service
 @Transactional
-public class ArticlesServiceImpl implements ArticlesService{
+public class ArticlesServiceImpl implements ArticlesService {
 
 	@Autowired
 	ArticlesRepository articleRepository;
@@ -19,5 +19,10 @@ public class ArticlesServiceImpl implements ArticlesService{
 	@Override
 	public List<Articles> findAll() {
 		return articleRepository.findAll();
+	}
+
+	@Override
+	public Articles save(Articles articles) {
+		return articleRepository.save(articles);
 	}
 }

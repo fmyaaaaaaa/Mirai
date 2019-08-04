@@ -11,4 +11,12 @@ public interface ArticlesService {
 	 * @return Articles
 	 */
 	List<Articles> findAll();
+
+	/**
+	 * Articleを保存します。
+	 *
+	 * @param entity 保存対象となるentity
+	 * @return Articles
+	 */
+	Articles save(Articles entity);
 }
