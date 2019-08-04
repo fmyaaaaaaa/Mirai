@@ -17,7 +17,7 @@ export default class Articles {
      */
     public async saveArticles(title: string, contents: string, topic: string) {
         const articleMsg = new ArticleMsg(title, contents, topic);
-        const res = await client.post('http://localhost:8085/articles/save', articleMsg)
+        const res = await client.post('http://localhost:8085/articles/save', articleMsg);
         return res;
     }
 }
