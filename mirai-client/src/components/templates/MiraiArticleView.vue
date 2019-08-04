@@ -13,5 +13,5 @@ import MiraiArticleForm from './../molecules/MiraiArticleForm.vue';
         MiraiArticleForm,
     },
 })
-export default class MiraiArticleView extends Vue{}
+export default class MiraiArticleView extends Vue {}
 </script>
